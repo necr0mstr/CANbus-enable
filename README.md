@@ -50,7 +50,8 @@ This document is written for the following hardware
 
 #### Put the U2C into DFU mode to flash firmware
 - Disconnect the USB-C cable (if connected) from the U2C device
-- Hold the **boot** button while plugging in the USB-C cable and you should see the $${\color{blue}blue}$$ and <span style="color:green">**green**</span> led lights come on.
+- Hold the **boot** button while plugging in the USB-C cable and you should see the **blue** and **green** led lights come on.
+- 
   
 
 
