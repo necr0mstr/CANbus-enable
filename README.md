@@ -88,6 +88,17 @@ make flash-budgetcan_fw
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/633e17d5-85a9-4bea-b97b-9302eab1274a" width=50% height=50%>
 
 
+### Building Katapult (formerly CanBoot) for EBB42
+- Go into the previously downloaded [Github repo for Katapult]([url](https://github.com/Arksine/katapult)https://github.com/Arksine/katapult) and open **menuconfig**
+```
+cd ~/git_files/katapult/
+make menuconfig
+```
+- Configure Katapult for the EBB42 (v1.1 or v1.2) device
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/93e1c289-bc0d-4770-8247-635e65a331f2" width=50% height=50%>
+- Quit (q) and when prompted to **Save configuration** select Yes (y)
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/6fb13c7d-8dbc-4124-bf3a-389d86cfcd30" width=50% height=50%>
+
 
 
 
