@@ -63,7 +63,8 @@ make budgetcan_fw
 ```
 lsusb
 ```
-![image](https://github.com/necr0mstr/CANbus-enable/assets/58074694/97d393d3-6ba3-440b-b4ab-b8e7c4aba173)
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/97d393d3-6ba3-440b-b4ab-b8e7c4aba173">
+
 
 
 
