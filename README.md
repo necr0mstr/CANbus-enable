@@ -60,7 +60,7 @@ make budgetcan_fw
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/96051b65-cad2-4d58-a4d7-e392a68bdc8d" width=20% height=20%>
 
 - Confirm that the device is found in DFU mode with either of the below commands.
-  - lsusb command will show the device in DFU
+  - The ```lsusb``` command will show the device in DFU
 ```
 lsusb
 ```
@@ -103,15 +103,15 @@ make menuconfig
 
 #### Flashing Katapult to the EBB42
 - Enable USB-C connection by adding a jumper next to the USB-C plug
-  <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/28365f9e-da5c-4db0-96cf-acf5a18bea21" width=50% height=50%>
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/28365f9e-da5c-4db0-96cf-acf5a18bea21" width=50% height=50%>
 
 - Put the EBB42 into DFU similar to the U2C
   - Press the **BOOT** button while plugging in the USB-C connector and you should see **blue** and **green** led lights come on.
   - Just like the U2C, you will see the device in DFU mode with the command ```lsusb```
-<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/97d393d3-6ba3-440b-b4ab-b8e7c4aba173" width=50% height=50%>
+  <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/97d393d3-6ba3-440b-b4ab-b8e7c4aba173" width=50% height=50%>
 
-- If the device is **not** in DFU mode then it will show as below
-<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/91e9d30e-17d5-48c2-bde5-fea1bfe4ea49" width=50% height=50%>
+  - If the device is **not** in DFU mode then it will show as below
+  <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/91e9d30e-17d5-48c2-bde5-fea1bfe4ea49" width=50% height=50%>
 
 
   
