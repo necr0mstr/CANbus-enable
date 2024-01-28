@@ -107,7 +107,8 @@ make menuconfig
 - Enable USB-C connection by adding a jumper next to the USB-C plug
 <p>
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/5feb2c2f-5411-471c-956b-ab3ffa48d796" width=50% height=50%>
-<ins><b><i>Image pulled from ([url](https://maz0r.github.io/klipper_canbus/images/ebb42_v1.1_reset.png))</i></b></ins>
+<br>
+  <ins><b><i>Image sourced from  ([(https://maz0r.github.io/klipper_canbus/images/ebb42_v1.1_reset.png)])</i></b></ins>
 </p>
 
 - Put the EBB42 into DFU similar to the U2C
