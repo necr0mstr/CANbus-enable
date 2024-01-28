@@ -33,9 +33,11 @@ This document is written for the following hardware
 
 
 ### Cloning repositories and building firmware
-```mkdir ~/git_files && cd ~/git_files```
-```git clone https://github.com/Arksine/katapult```
-```git clone https://github.com/bigtreetech/candleLight_fw.git```
+```mkdir ~/git_files && cd ~/git_files
+
+git clone https://github.com/Arksine/katapult
+
+git clone https://github.com/bigtreetech/candleLight_fw.git```
 
 ### Install required OS packages
 ```sudo apt-get update && sudo apt-get -y upgrade```
