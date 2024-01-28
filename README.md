@@ -149,13 +149,17 @@ python3 ~/git_files/katapult/scripts/flash_can.py -i can0 -q
 
 #### Building Klipper for the EBB42
 - You should already have Klipper installed and your directory structure may vary
+- Build the klipper firmware for the EBB42 (v1.1 and v1.2)
 ```
 cd ~/klipper/
 make clean
 make menuconfig
 ```
-    
+- The ```make menuconfig``` screen will look just like the **katapult** screen
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/93e1c289-bc0d-4770-8247-635e65a331f2" width=50% height=50%>
 
+- Quit (q) and when prompted to **Save configuration** select Yes (y) (just like with katapult)
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/6fb13c7d-8dbc-4124-bf3a-389d86cfcd30" width=50% height=50%>
 
   
 
