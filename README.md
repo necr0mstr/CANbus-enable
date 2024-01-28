@@ -144,7 +144,9 @@ dfu-util -a 0 -D ~/git_files/katapult/out/katapult.bin -s 0x08000000:mass-erase:
 python3 ~/git_files/katapult/scripts/flash_can.py -i can0 -q
 ```
 - The output will be similar, but different in syntax output
+  - The images shown are after Klipper was flashed.  At this phase it should show **Application: katapult**
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/793c03eb-2f2b-420c-99ea-c35e631ae6e1" width=50% height=50%>
+
 
 
     
