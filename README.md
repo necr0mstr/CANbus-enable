@@ -69,6 +69,7 @@ lsusb
 - If the device is **not** in DFU mode then it will show as below
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/91e9d30e-17d5-48c2-bde5-fea1bfe4ea49" width=50% height=50%>
 
+#### Flash budgetcan_fw to the U2C
 - Flash the previously built **budgetcan_fw** to the U2C
 ```
 cd ~/git_files/candleLight_fw/build
@@ -76,7 +77,13 @@ make flash-budgetcan_fw
 ```
 - The output should show something similar to this
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/e0da3f3f-e085-4519-8902-0b030e41d3da" width=50% height=50%>
-
+- Once completed, the device should show up as a CAN device in ```lsusb```
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/2d70acb9-7b23-4d4b-9c41-964ca1b313e3" width=50% height=50%>
+- The command below should show **Total 0 uuids found**
+```
+~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
+```
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/633e17d5-85a9-4bea-b97b-9302eab1274a" width=50% height=50%>
 
 
 
