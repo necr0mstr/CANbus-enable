@@ -55,12 +55,15 @@ make budgetcan_fw
 ```
 
 #### Put the U2C into DFU mode to flash firmware
-- Disconnect the USB-C cable (if connected) from the U2C device
+- Disconnect the USB-C cable (if connected) from the U2C device.
 - Hold the **BOOT** button while plugging in the USB-C cable and you should see the **blue** and **green** led lights come on.
-
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/96051b65-cad2-4d58-a4d7-e392a68bdc8d" width=20% height=20%>
-
-
+- Confirm that the device is found in DFU mode with either of the below commands.
+  - lsusb command will show the device in DFU
+```
+lsusb
+```
+![image](https://github.com/necr0mstr/CANbus-enable/assets/58074694/97d393d3-6ba3-440b-b4ab-b8e7c4aba173)
 
 
 
