@@ -40,15 +40,19 @@ git clone https://github.com/bigtreetech/candleLight_fw.git
 ```
 
 ### Install required OS packages
-```sudo apt-get update && sudo apt-get -y upgrade```
-```sudo apt-get install -y cmake gcc-arm-none-eabi git```
+```
+sudo apt-get update && sudo apt-get -y upgrade
+sudo apt-get install -y cmake gcc-arm-none-eabi git
+```
 
 ### Building budgetcan_fw for the U2C ###
-```cd ~/git_files/candleLight_fw/```
-```git checkout stm32g0_support```
-```mkdir ~/git_files/candleLight_fw/build && cd ~/git_files/candleLight_fw/build```
-```cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/gcc-arm-none-eabi-8-2019-q3-update.cmake```
-```make budgetcan_fw```
+```
+cd ~/git_files/candleLight_fw/
+git checkout stm32g0_support
+mkdir ~/git_files/candleLight_fw/build && cd ~/git_files/candleLight_fw/build
+cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/gcc-arm-none-eabi-8-2019-q3-update.cmake
+make budgetcan_fw
+```
 
 #### Put the U2C into DFU mode to flash firmware
 - Disconnect the USB-C cable (if connected) from the U2C device
