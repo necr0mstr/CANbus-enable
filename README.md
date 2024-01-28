@@ -69,6 +69,14 @@ lsusb
 - If the device is **not** in DFU mode then it will show as below
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/91e9d30e-17d5-48c2-bde5-fea1bfe4ea49" width=50% height=50%>
 
+- Flash the previously built **budgetcan_fw** to the U2C
+```
+cd ~/git_files/candleLight_fw/build
+make flash-budgetcan_fw
+```
+- The output should show something similar to this
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/e0da3f3f-e085-4519-8902-0b030e41d3da" width=50% height=50%>
+
 
 
 
