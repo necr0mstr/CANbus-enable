@@ -56,7 +56,7 @@ make budgetcan_fw
 
 #### Put the U2C into DFU mode to flash firmware
 - Disconnect the USB-C cable (if connected) from the U2C device
-- Hold the **boot** button while plugging in the USB-C cable and you should see the **blue** and **green** led lights come on.
+- Hold the ![**BOOT**](https://github.com/necr0mstr/U2C_BTT/blob/master/Image/pinout.png) button while plugging in the USB-C cable and you should see the **blue** and **green** led lights come on.
 - 
   
 
