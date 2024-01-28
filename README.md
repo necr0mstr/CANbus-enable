@@ -1,3 +1,5 @@
+**This document assumes you are already running Klipper on a Rapberry Pi or BTT Pi (you can use other computers).  With that assumption, you also know how to access the command line for the computer you use and have intermmediate knowledge of administration of Klipper and other software.**
+
 # CANbus-enable
 How to enable CANbus with RPi, Klipper, candleLight_fw, and katapult on BTT devices U2C and EBB42 
 
@@ -15,3 +17,4 @@ When enabling CANbus using a U2C and EBB42 you need the following software
     - Raspberry Pi CM4
     - Bigtreetech Pi
     - Bigtreetech CB1
+
