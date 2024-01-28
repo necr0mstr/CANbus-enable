@@ -96,6 +96,7 @@ make menuconfig
 ```
 - Configure Katapult for the EBB42 (v1.1 or v1.2) device
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/93e1c289-bc0d-4770-8247-635e65a331f2" width=50% height=50%>
+
 - Quit (q) and when prompted to **Save configuration** select Yes (y)
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/6fb13c7d-8dbc-4124-bf3a-389d86cfcd30" width=50% height=50%>
 
