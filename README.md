@@ -77,8 +77,10 @@ make flash-budgetcan_fw
 ```
 - The output should show something similar to this
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/e0da3f3f-e085-4519-8902-0b030e41d3da" width=50% height=50%>
+
 - Once completed, the device should show up as a CAN device in ```lsusb```
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/2d70acb9-7b23-4d4b-9c41-964ca1b313e3" width=50% height=50%>
+
 - The command below should show **Total 0 uuids found**
 ```
 ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
