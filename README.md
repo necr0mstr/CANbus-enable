@@ -56,7 +56,7 @@ make budgetcan_fw
 
 #### Put the U2C into DFU mode to flash firmware
 - Disconnect the USB-C cable (if connected) from the U2C device.
-- Hold the **BOOT** button while plugging in the USB-C cable and you should see the **blue** and **green** led lights come on.
+- Press and hold the **BOOT** button while plugging in the USB-C cable and you should see the **blue** and **green** led lights come on.
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/96051b65-cad2-4d58-a4d7-e392a68bdc8d" width=20% height=20%>
 
 - Confirm that the device is found in DFU mode with either of the below commands.
@@ -108,13 +108,13 @@ make menuconfig
 <p>
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/5feb2c2f-5411-471c-956b-ab3ffa48d796" width=50% height=50%>
 <br>
-  <ins><b><i>(Image sourced from)[https://maz0r.github.io/klipper_canbus/images/ebb42_v1.1_reset.png]</i></b></ins>
+  <ins><b><i>Image sourced from [https://maz0r.github.io/klipper_canbus/images/ebb42_v1.1_reset.png]</i></b></ins>
 </p>
 
 - Put the EBB42 into DFU similar to the U2C
-  - Press the **BOOT** button while plugging in the USB-C connector and you should see **blue** and **green** led lights come on.
+  - Press and hold the **BOOT** button while plugging in the USB-C connector and you should see **blue** and **green** led lights come on.
   - Just like the U2C, you will see the device in DFU mode with the command ```lsusb```
-  <img src="" width=50% height=50%>
+  <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/97f8f24f-49e0-4b9e-b0d3-4554df44b78a" width=50% height=50%>
 
   - If the device is **not** in DFU mode then it will show as below
     - The previously flashed U2C is shown as a CAN adapter immediately after the EBB42
@@ -130,8 +130,23 @@ dfu-util -a 0 -D ~/git_files/katapult/out/katapult.bin -s 0x08000000:mass-erase:
 
 - Unplug the USB-C and add the 120 ohm resister jumper to enable communication over CAN
 - You now have a couple ways to test CAN communication
-  - Use the USB-C to power the EBB42 and connect jumper wires to the U2C and EBB42 using the jumper pins for CAN
+  - Leave the jumper in place for USB power and connect the USB-C to the EBB42 and connect jumper wires to the U2C and EBB42 using the jumper pins for CAN
     - The **High** and **Low** channels are reversed between the U2C and EBB42
+  - Use a previously made or purchased cable for CAN communication between the U2C and EBB42
+
+#### Confirming CAN communication
+- You should now see the EBB42 device available as a CAN device with a UUID
+```
+~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
+```
+- Alternatively
+```
+python3 ~/git_files/katapult/scripts/flash_can.py -i can0 -q
+```
+- The output will be similar, but different in syntax output
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/793c03eb-2f2b-420c-99ea-c35e631ae6e1" width=50% height=50%>
+
+
     
 
 
