@@ -95,6 +95,7 @@ make flash-budgetcan_fw
 - Go into the previously downloaded [Github repo for Katapult]([url](https://github.com/Arksine/katapult)https://github.com/Arksine/katapult) and open **menuconfig**
 ```
 cd ~/git_files/katapult/
+make clean
 make menuconfig
 ```
 - Configure Katapult for the EBB42 (v1.1 or v1.2) device
@@ -102,6 +103,13 @@ make menuconfig
 
 - Quit (q) and when prompted to **Save configuration** select Yes (y)
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/6fb13c7d-8dbc-4124-bf3a-389d86cfcd30" width=50% height=50%>
+
+- After exiting and still in the katapult directory, make the firmware image from the saved configuration
+```
+make
+```
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/ea1de3df-8333-4800-880d-46f8efb0c52d" width=50% height=50%>
+
 
 #### Flashing Katapult to the EBB42
 - Enable USB-C connection by adding a jumper next to the USB-C plug
@@ -147,7 +155,7 @@ python3 ~/git_files/katapult/scripts/flash_can.py -i can0 -q
   - The images shown are after Klipper was flashed.  At this phase it should show **Application: Katapult**
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/793c03eb-2f2b-420c-99ea-c35e631ae6e1" width=50% height=50%>
 
-#### Building Klipper for the EBB42
+#### Building Klipper and flashing the EBB42
 - You should already have Klipper installed and your directory structure may vary
 - Build the klipper firmware for the EBB42 (v1.1 and v1.2)
 ```
@@ -161,5 +169,13 @@ make menuconfig
 - Quit (q) and when prompted to **Save configuration** select Yes (y) (just like with katapult)
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/6fb13c7d-8dbc-4124-bf3a-389d86cfcd30" width=50% height=50%>
 
-  
+- If you are flashing this over CAN, then you will need the previously discovered UUID of the CAN device
+```
+ python3 ~/katapult/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u bbe84d8c5e97
+```
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/17ea507a-b4d7-4914-b504-dc7298413bae" width=50% height=50%>
+
+# Congratulations, you now have a working CAN communication stream to the toolhead.  The next part of the journey begins with finding the deafult configuration file and moving functionality to the toolhead EBB42 board.
+
+
 
