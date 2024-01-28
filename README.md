@@ -65,7 +65,7 @@ lsusb
 ```
 <img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/97d393d3-6ba3-440b-b4ab-b8e7c4aba173" width=50% height=50%>
   - If the device is not in DFU mode then it will show as below
-<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/91e9d30e-17d5-48c2-bde5-fea1bfe4ea49 width=50% height=50%>
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/91e9d30e-17d5-48c2-bde5-fea1bfe4ea49" width=50% height=50%>
 
 
 
