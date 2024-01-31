@@ -89,6 +89,9 @@ make flash-budgetcan_fw
 
 - The last thing to do is to add the 120 ohm jumper on the U2C to enable communication over CAN
 
+- CANbus and power are marked on this image
+<img src="https://github.com/necr0mstr/CANbus-enable/assets/58074694/dd99c202-347d-4b87-85c0-e9b5da51418f" width=50% height=50%>
+
 ### Building Katapult and flashing the EBB42
 
 #### Building Katapult (formerly CanBoot) for EBB42
